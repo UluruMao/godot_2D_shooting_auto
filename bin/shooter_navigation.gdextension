@@ -1,0 +1,12 @@
+[configuration]
+entry_symbol = "shooter_navigation_init"
+compatibility_minimum = "4.5"
+reloadable = false
+
+[libraries]
+windows.debug.x86_64 = "res://bin/shooter_navigation.debug.dll"
+windows.release.x86_64 = "res://bin/shooter_navigation.release.dll"
+linux.debug.x86_64 = "res://bin/shooter_navigation.debug.so"
+linux.release.x86_64 = "res://bin/shooter_navigation.release.so"
+macos.debug = "res://bin/shooter_navigation.debug.dylib"
+macos.release = "res://bin/shooter_navigation.release.dylib"

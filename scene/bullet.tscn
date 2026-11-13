@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cq1i4fgwrb1j8"]
+
+[ext_resource type="Script" uid="uid://fc4sjtkjbq6f" path="res://scene/bullet.gd" id="1_bullet"]
+[ext_resource type="Texture2D" uid="uid://bxjlpuypqh47m" path="res://resources/texture/道具ui.png" id="2_xw300"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dlkw"]
+atlas = ExtResource("2_xw300")
+region = Rect2(22, 23, 4, 4)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bullet"]
+radius = 3.0
+
+[node name="Bullet" type="Area2D" unique_id=146685926]
+collision_layer = 16
+collision_mask = 5
+script = ExtResource("1_bullet")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=262761701]
+texture = SubResource("AtlasTexture_3dlkw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=781522717]
+shape = SubResource("CircleShape2D_bullet")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyConfig" format=3 uid="uid://n8xpqq76ujx6"]
+
+[ext_resource type="Script" uid="uid://bx8y8fmy0w7l" path="res://resources/config/pickup_config.gd" id="1_ax6jx"]
+[ext_resource type="Resource" uid="uid://ba1p5yt0ky5w7" path="res://resources/config/pickup_speed.tres" id="2_7hcef"]
+[ext_resource type="Resource" uid="uid://xij8f8gx0v15" path="res://resources/config/pickup_rapid.tres" id="3_7rafb"]
+[ext_resource type="Resource" uid="uid://dnjvuaw1djune" path="res://resources/config/pickup_spiral.tres" id="4_jot1f"]
+[ext_resource type="Script" uid="uid://blgt0patuwx4m" path="res://resources/config/enemy_config.gd" id="5_jilfn"]
+
+[resource]
+script = ExtResource("5_jilfn")
+enemy_type = 1
+display_name = "shelled enemy"
+max_health = 5
+move_speed = 10.0
+collision_radius = 10.0
+pickup_drop_chance = 0.7
+metadata/_custom_type_script = "uid://blgt0patuwx4m"
